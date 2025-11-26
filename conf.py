@@ -5,7 +5,7 @@ import sys
 
 # -- Path setup --------------------------------------------------------------
 
-# Add paths if your modules are outside the project root
+# Add any paths to sys.path if your modules are outside the root
 # sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
@@ -14,41 +14,41 @@ project = 'Trend Micro Installation & Activation Guide'
 copyright = '2025, Trend Micro'
 author = 'Trend Micro Support Team'
 
-# Full version string
+# The full version, including alpha/beta/rc tags
 release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 
+# Sphinx extensions (leave blank or add as needed)
 extensions = []
 
-# Allow raw HTML inside .rst files
+# Allow reStructuredText raw HTML
 raw_enabled = True
 
-templates_path = ['_templates']
-
-# Ignore these files/folders during build
+# Templates and patterns to ignore
+templates_path = ['_templates']  # Uncomment if using custom templates
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-# Allow unsafe HTML content
-html_allow_unsafe = True
 
 # -- Options for HTML output -------------------------------------------------
 
-# HTML theme (you can enable sphinx_rtd_theme if installed)
+# Theme (you can switch to 'sphinx_rtd_theme' or another as needed)
 # html_theme = 'sphinx_rtd_theme'
 
+# Basic page info
 html_title = "Trend Micro Installation & Activation Guide"
 html_short_title = "Trend Micro Setup"
-html_favicon = 'favicon.ico'  # Put favicon in _static or root folder
+html_favicon = 'favicon.ico'  # Place the file in the _static or root folder
 
-# Hide "View Source" link
+# Hide "View page source"
 html_show_sourcelink = False
+
+# Allow unsafe raw HTML in .rst files
+html_allow_unsafe = True
 
 # Theme customization
 html_theme_options = {
     'show_powered_by': False,
 }
 
-# Directory for custom static files like CSS, JS, images
+# Static assets (uncomment if you have them)
 # html_static_path = ['_static']
-g
